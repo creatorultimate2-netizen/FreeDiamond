@@ -13,9 +13,12 @@
 
 <title>Garena Free Fire Team</title>
 
+
 <style>
 
-/* GLOBAL RESET */
+/* =========================================
+   GLOBAL RESET
+========================================= */
 
 *{
     margin:0;
@@ -34,16 +37,23 @@ body{
     min-height:100%;
     margin:0;
     padding:0;
+
     overflow-x:hidden;
 
     background:#2b2b2b;
+
     color:#fff;
 
-    font-family:Arial, Helvetica, sans-serif;
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
 }
 
 
-/* HEADER */
+/* =========================================
+   HEADER
+========================================= */
 
 .header{
     width:100%;
@@ -83,7 +93,9 @@ body{
 }
 
 
-/* MAIN */
+/* =========================================
+   MAIN
+========================================= */
 
 .main{
     width:100%;
@@ -94,10 +106,14 @@ body{
 
     display:flex;
     flex-direction:column;
+
+    overflow:visible;
 }
 
 
-/* WATCH TITLE */
+/* =========================================
+   WATCH TITLE
+========================================= */
 
 .watch-title{
     width:100%;
@@ -120,7 +136,9 @@ body{
 }
 
 
-/* VIDEO BOX */
+/* =========================================
+   VIDEO CONTAINER
+========================================= */
 
 .video-box{
     width:100%;
@@ -167,7 +185,11 @@ body{
 }
 
 
-/* DIAMOND CARD */
+/* =========================================
+   DIAMOND CARD
+
+   ONLY 8PX GAP FROM VIDEO
+========================================= */
 
 .diamond-card{
     width:100%;
@@ -210,7 +232,9 @@ body{
 }
 
 
-/* RGB ANIMATION */
+/* =========================================
+   NEON ANIMATION
+========================================= */
 
 @keyframes rgbAnimation{
 
@@ -228,14 +252,15 @@ body{
 }
 
 
-/* CARD INNER */
+/* =========================================
+   CARD INNER
+========================================= */
 
 .card-inner{
     width:100%;
     max-width:100%;
 
     margin:0;
-
     padding:
         12px;
 
@@ -250,7 +275,9 @@ body{
 }
 
 
-/* BADGES */
+/* =========================================
+   BADGES
+========================================= */
 
 .badges{
     width:100%;
@@ -291,7 +318,9 @@ body{
 }
 
 
-/* PRODUCT */
+/* =========================================
+   PRODUCT
+========================================= */
 
 .product{
     width:100%;
@@ -309,7 +338,9 @@ body{
 }
 
 
-/* PNG IMAGE */
+/* =========================================
+   CLICKABLE PRODUCT IMAGE
+========================================= */
 
 .product-link{
     display:block;
@@ -342,7 +373,7 @@ body{
 
     border:0;
 
-    object-fit:contain;
+    object-fit:cover;
 
     background:#222;
 
@@ -350,7 +381,9 @@ body{
 }
 
 
-/* PRODUCT INFO */
+/* =========================================
+   PRODUCT INFO
+========================================= */
 
 .product-info{
     min-width:0;
@@ -421,7 +454,9 @@ body{
 }
 
 
-/* CLAIM BUTTON */
+/* =========================================
+   CLAIM BUTTON
+========================================= */
 
 .claim-btn{
     width:100%;
@@ -482,7 +517,9 @@ body{
 }
 
 
-/* SMALL PHONES */
+/* =========================================
+   VERY SMALL PHONES
+========================================= */
 
 @media(max-width:360px){
 
@@ -509,6 +546,8 @@ body{
     .video-box{
         border-radius:14px;
     }
+
+    /* केवल 8px gap */
 
     .diamond-card{
         margin-top:8px;
@@ -584,7 +623,9 @@ body{
 <body>
 
 
-<!-- HEADER -->
+<!-- =========================================
+     HEADER
+========================================= -->
 
 <header class="header">
 
@@ -595,7 +636,10 @@ body{
 </header>
 
 
-<!-- MAIN -->
+
+<!-- =========================================
+     MAIN
+========================================= -->
 
 <main class="main">
 
@@ -607,23 +651,23 @@ body{
     </h2>
 
 
-    <!-- VIDEO -->
+
+    <!-- ======================================
+         VIDEO
+    ======================================= -->
 
     <section class="video-box">
 
         <video
-            id="myVideo"
-            autoplay
-            muted
-            playsinline
-            preload="auto"
             controls
+            playsinline
+            preload="metadata"
         >
 
             <source
-                src="https://res.cloudinary.com/bnd1wsub/video/upload/1788114071885-e4c256c7-a5e8-45f5-9017-bf86970f953e.mp4"
-                type="video/mp4"
-            >
+                <video controls playsinline preload="metadata">
+  <source src="https://res.cloudinary.com/bnd1wsub/video/upload/1788114071885-e4c256c7-a5e8-45f5-9017-bf86970f953e.mp4" type="video/mp4">
+</video>
 
             Your browser does not support
             the video tag.
@@ -633,9 +677,14 @@ body{
     </section>
 
 
-    <!-- FREE DIAMONDS -->
+
+    <!-- ======================================
+         FREE DIAMONDS
+         8PX GAP ONLY
+    ======================================= -->
 
     <section class="diamond-card">
+
 
         <div class="card-inner">
 
@@ -655,15 +704,16 @@ body{
             </div>
 
 
+
             <!-- PRODUCT -->
 
             <div class="product">
 
 
-                <!-- PNG IMAGE -->
+                <!-- CLICKABLE IMAGE -->
 
                 <a
-                    href="https://terasharefile.com/s/149i0kz-yeLmF-1C4MmI00Q"
+                    href="CLAIM_URL"
                     target="_blank"
                     rel="noopener noreferrer"
                     class="product-link"
@@ -678,6 +728,7 @@ body{
                 </a>
 
 
+
                 <!-- PRODUCT INFO -->
 
                 <div class="product-info">
@@ -686,10 +737,12 @@ body{
                         FREE DIAMONDS
                     </div>
 
+
                     <div class="product-desc">
                         FREE FIRE UNLIMITED<br>
                         DIAMONDS • INSTANT CLAIM
                     </div>
+
 
                     <div class="stars">
                         ★★★★★
@@ -699,6 +752,7 @@ body{
 
 
             </div>
+
 
 
             <!-- CLAIM BUTTON -->
@@ -715,62 +769,11 @@ body{
 
         </div>
 
+
     </section>
 
 
 </main>
-
-
-<!-- VIDEO AUTOPLAY + SOUND -->
-
-<script>
-
-const video = document.getElementById("myVideo");
-
-
-/* Automatic video start */
-
-video.play().catch(function(){
-
-    console.log("Autoplay is waiting for browser permission.");
-
-});
-
-
-/* First touch/click = sound ON */
-
-function enableSound(){
-
-    video.muted = false;
-    video.volume = 1;
-
-    video.play().catch(function(){
-
-        console.log("Playback needs user interaction.");
-
-    });
-
-}
-
-
-/* Mobile */
-
-document.addEventListener(
-    "touchstart",
-    enableSound,
-    { once:true }
-);
-
-
-/* Desktop */
-
-document.addEventListener(
-    "click",
-    enableSound,
-    { once:true }
-);
-
-</script>
 
 
 </body>
